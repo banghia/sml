@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>SML69 - My Messages</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div class="menu">
+            <div class="container">
+                <div class="logo fleft">
+                    <a href="/">
+                        <img src="images/logo.png" alt="logo" />
+                        <span>SML69</span>
+                    </a>
+                </div>
+                <div class="main-menu fright">
+                    <ul class="list-inline">
+                        <li><a href="/account/signout">Logout</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <div class="tb-1 frames text-center">
+                <a href="#"><img src="http://via.placeholder.com/120x120" alt="" /></a><br>
+                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                <span><%= username %></span>
+                <p style="cursor: pointer;">/<%= username %>.sml</p>
+            </div>
+
+            <div class="tb-2 text-center frames">
+                <h2>My Messages</h2>
+                <ul class="list-inline">
+                    <li class="list1"><a href="#">Received</a></li>
+                    <li class="list2"><a href="#">Favorites</a></li>
+                    <li class="list3"><a href="#">Sents</a></li>
+                </ul>
+                <% posts.forEach(function(post){ %>
+                <a href="/post/rd_<%= post.PRandom %>" class="content-message content-received text-left">
+                    <span class="clock"><%= post.PDate %></span>
+                    <span class="msg"><%= post.PContent %></span>
+                    <span class="delete">x</span>
+                </a>
+                <% }); %>
+                <div class="content-message content-sents text-left">
+                    <span class="clock"></span>
+                    <span class="msg">dmm</span>
+                    <span class="delete">x</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="center-block">
+        <div class="container">
+            <div class="col-1 w33 fleft">
+                <div class="copyright">
+                    SML69 2017 ©
+                    <span>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</span>
+                    -
+                    <a href="#">Privacy</a>
+                    -
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <div class="col-1 w33 fleft">
+                <div class="language">
+                    <a href="#">English</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

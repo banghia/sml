@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>SML69 - Register</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/fonts.css" />
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div class="menu">
+            <div class="container">
+                <div class="logo fleft">
+                    <a href="/">
+                        <img src="../images/logo.png" alt="logo" />
+                        <span>SML69</span>
+                    </a>
+                </div>
+                <div class="main-menu fright">
+                    <ul class="list-inline">
+                        <li><a href="/account/signin">Login</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <h3 class="text-center">Register</h3>
+            <div class="panel-body">
+                <form action="">
+                    <div class="r1 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Email</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="text" id="signup_email"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r2 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Password</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="text" id="signup_password"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r3 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Password Confirmation</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="text" id="signup_confirm_password"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r4 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Username</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="text" id="signup_username"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r5 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Name</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="text" id="signup_name"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r6 format-row">
+                        <div class="col-w3 text-right fleft">
+                            <h4>Photo (optionall)</h4>
+                        </div>
+                        <div class="col-w7 fleft">
+                            <input type="file" accept="image/*" id="PhotoFile" name="photoFile"/>
+                            <span class="text-danger field-validation-valid" data-valmsg-for="PhotoURL" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="r7 check-box">
+                        <label><input id="signup_notify" type="checkbox" checked> Notifications</label>
+                    </div>
+                    <div class="r8 check-box">
+                        <label><input id="signup_term" type="checkbox" class="checkbox-inline"> I have read and accept the  <a target="_blank" href="#">Terms and Conditions</a></label>
+                    </div>
+                    <div class="r9 btn">
+                        <input type="button" value="Register" onclick="signUp()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="center-block">
+        <div class="container">
+            <div class="col-1 w33 fleft">
+                <div class="copyright">
+                    SML69 2017 ©
+                    <span>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</span>
+                    -
+                    <a href="#">Privacy</a>
+                    -
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <div class="col-1 w33 fleft">
+                <div class="language">
+                    <a href="#">English</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

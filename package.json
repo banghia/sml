@@ -1,0 +1,22 @@
+{
+  "name": "sml-v3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "md5": "^2.2.1",
+    "morgan": "~1.8.1",
+    "mysql": "^2.14.1",
+    "node-datetime": "^2.0.3",
+    "node-rsa": "^0.4.2",
+    "randomstring": "^1.1.5",
+    "serve-favicon": "~2.4.2"
+  }
+}

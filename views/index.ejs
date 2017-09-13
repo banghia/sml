@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>SML69 - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div class="menu">
+      <div class="container">
+        <div class="logo fleft">
+          <a href="/">
+            <img src="images/logo.png" alt="logo" />
+            <span>SML69</span>
+          </a>
+        </div>
+        <div class="main-menu fright">
+          <ul class="list-inline">
+              <% if (!statusCode) { %>
+            <li class="l2"><a href="/account/signup">Register</a></li>
+            <li class="l4"><a href="/account/signin">Login</a></li>
+              <% }else{ %>
+            <li><a href="/messages">My messages</a></li>
+            <li class="l5"><a href="/account/signout">Logout</a></li>
+              <% } %>
+            <li class="l6"><a href="#">About Us</a></li>
+            <li class="l7"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="container">
+      <div class="row-1">
+        <p>Get honest feedback from your coworkers and friends</p>
+      </div>
+      <div class="row-2">
+        <div class="at-work w50 fleft">
+          <h3>At work</h3>
+          <ul>
+            <li>Enhance your areas of strength</li>
+            <li>Strengthen Areas for Improvement</li>
+          </ul>
+        </div>
+        <div class="with-your-friends w50 fleft">
+          <h3>With your friends</h3>
+          <ul>
+            <li>Improve your friendship by discovering your strengths and areas for improvement</li>
+            <li>Let your friends be honest with you</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+        <% if (!statusCode) { %>
+      <div class="row-3">
+        <ul class="list-inline">
+          <li><a href="/account/signup">Register</a></li>
+          <li><a href="/account/signin">Login</a></li>
+        </ul>
+      </div>
+        <% } %>
+    </div>
+
+  </div>
+
+  <div id="footer" class="center-block">
+    <div class="container">
+      <div class="col-1 w33 fleft">
+        <div class="copyright">
+          SML69 2017 ©
+          <span>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</span>
+          -
+          <a href="#">Privacy</a>
+          -
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="col-1 w33 fleft">
+        <div class="language">
+          <a href="#">English</a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
